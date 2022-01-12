@@ -16,7 +16,9 @@ export const ApplyDRPolicyModal: React.FC<DisasterRecoveryModalProps>= ({applica
           title={t("Apply DR policy")}
           isOpen={isModalOpen}
           onClose={handleModalToggle}
-          description={t(`Please select a DR policy you wish to apply to ${application?.metadata?.name}`)}
+          description={t('Please select a DR policy you wish to apply to {{appName}}', {
+            appName: application?.metadata?.name,
+          })}
           actions={[
             <Button key="confirm" variant="primary" onClick={handleModalToggle}>
               {t('Confirm')}

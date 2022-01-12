@@ -1,5 +1,6 @@
 {
   "Apply DR policy": "Apply DR policy",
+  "Please select a DR policy you wish to apply to {{appName}}": "Please select a DR policy you wish to apply to {{appName}}",
   "Confirm": "Confirm",
   "Cancel": "Cancel",
   "Activity": "Activity",

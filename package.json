@@ -111,7 +111,9 @@
     },
     "exposedModules": {
       "dashboard": "@odf/core/components/odf-dashboard/dashboard",
-      "features": "@odf/core/features"
+      "features": "@odf/core/features",
+      "applyDrPolicyModal": "@odf/core/components/disaster-recovery/apply-dr-policy-modal",
+      "applyDrPolicyActionProvider": "@odf/core/components/disaster-recovery/apply-dr-policy-action-provider"
     }
   }
 }

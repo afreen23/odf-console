@@ -54,5 +54,20 @@
     "flags": {
       "required": ["ODF_MODEL"]
     }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "path": "/edit/ns/:namespace?name=:name&kindObj=:kind",
+      "exact": true,
+      "component": { "$codeRef": "applyDrPolicyModal.ApplyDRPolicyModal" }
+    }
+  },
+  {
+    "type": "console.action/provider",
+    "properties": {
+      "contextId": "acm-application-actions",
+      "provider": { "$codeRef": "applyDrPolicyActionProvider.useDRActionProvider" }
+    }
   }
 ]

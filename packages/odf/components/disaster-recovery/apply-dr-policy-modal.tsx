@@ -31,5 +31,5 @@ export const ApplyDRPolicyModal: React.FC<DisasterRecoveryModalProps>= ({applica
 };
 
 type DisasterRecoveryModalProps = {
-    application: K8sResourceKind;
+    application?: K8sResourceKind;
 }

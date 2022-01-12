@@ -17,8 +17,7 @@ export const ApplicationModel: K8sKind = {
     id: 'apply-dr-policy',
     label: i18next.t('plugin__odf-console~Apply DR policy'),
     cta: {
-      href: `/edit/ns/${application.metadata.namespace}?name=${application.metadata.name}&kindObj=${application.kind ||
-        kindObj.kind}`,
+      href: '/odf/edit/dr/policy',
     },
     insertAfter: 'edit-application',
     accessReview: {

@@ -58,7 +58,7 @@
   {
     "type": "console.page/route",
     "properties": {
-      "path": "/edit/ns/:namespace?name=:name&kindObj=:kind",
+      "path": "/odf/edit/dr/policy",
       "exact": true,
       "component": { "$codeRef": "applyDrPolicyModal.ApplyDRPolicyModal" }
     }

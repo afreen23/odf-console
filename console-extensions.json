@@ -73,7 +73,7 @@
   {
     "type": "console.navigation/section",
     "properties": {
-        "id": "odf-data-fpundation",
+        "id": "odf-data-foundation",
         "perspective": "acm",
         "name": "%plugin__odf-plugin~Data Services%"
     }
@@ -82,7 +82,7 @@
     "type": "console.navigation/href",
     "properties": {
       "id": "dr-odf",
-      "section": "odf-data-fpundation",
+      "section": "odf-data-foundation",
       "name": "Disaster Recovery",
       "href": "/odf/edit/dr/policy",
       "perspective" : "acm"

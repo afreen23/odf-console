@@ -13,12 +13,15 @@ export const ApplicationModel: K8sKind = {
     plural: 'applications'
 }
 
- export const ApplyDRPolicyAction = (kindObj: K8sKind, application: K8sResourceKind): Action => ({
-    id: 'apply-dr-policy',
+export const applyDRPolicyModal = (props) =>
+  import('./apply-dr-policy-modal' /* webpackChunkName: "apply-dr-policy-modal" */).then((m) =>
+    m.ApplyDRPolicyModal(props),
+  );
+
+ export const ApplyDRPolicyAction = (kindObj: K8sKind, application: K8sResourceKind, history): Action => ({
+    id: 'odf-application-action',
     label: i18next.t('plugin__odf-console~Apply DR policy'),
-    cta: {
-      href: '/odf/edit/dr/policy',
-    },
+    cta: () => { history.push('/odf/edit/dr/policy')},
     insertAfter: 'edit-application',
     accessReview: {
       group: kindObj.apiGroup,

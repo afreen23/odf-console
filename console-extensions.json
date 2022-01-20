@@ -69,5 +69,23 @@
       "contextId": "acm-application-actions",
       "provider": { "$codeRef": "applyDrPolicyActionProvider.useDRActionProvider" }
     }
+  },
+  {
+    "type": "console.navigation/section",
+    "properties": {
+        "id": "odf-data-fpundation",
+        "perspective": "acm",
+        "name": "%plugin__odf-plugin~Data Services%"
+    }
+},
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "dr-odf",
+      "section": "odf-data-fpundation",
+      "name": "Disaster Recovery",
+      "href": "/odf/edit/dr/policy",
+      "perspective" : "acm"
+    }
   }
 ]
